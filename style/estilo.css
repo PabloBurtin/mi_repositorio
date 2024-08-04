@@ -44,44 +44,29 @@ header {
 }
 
 
-.imgin{
-  height: 200px;
-  width: auto;
-  display: inline;
-}
+
 .presentacion h2{
-  
-    font-size: 3rem;
+
+    font-size: 4rem;
     text-align: center;
-    
+
 }
 
-#imagen1 {
-  display: flex;
-}
-
-#imagen1 img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-}
-
-
-/*footer{
+footer{
   width: 100%;
   background-color:rgba(151, 147, 147, 0.775);
   padding: 10px;
+  text-decoration: none;
   
-}*/
+}
 
 
 .bg-pablo{
   background-color: transparent;
 }
-  
 
-/*
+
+
 .container {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -123,6 +108,4 @@ header {
 
 }
 }
-
-*/
-      
+    
