@@ -92,21 +92,17 @@ footer{
   grid-template-areas:
     "Imagen-inicial Imagen-inicial Imagen-inicial"
     "Imagen-y-texto Imagen-y-texto-2 Imagen-y-texto-3"
-    "Imagen-y-texto Imagen-y-texto-2 Imagen-y-texto-3"
-    "Footer Footer Footer";
+    "Imagen-y-texto Imagen-y-texto-2 Imagen-y-texto-3";
+    
 }
 
 .Imagen-inicial { grid-area: Imagen-inicial; }
-
-.Texto-inicial { grid-area: Texto-inicial; }
 
 .Imagen-y-texto { grid-area: Imagen-y-texto; }
 
 .Imagen-y-texto-2 { grid-area: Imagen-y-texto-2; }
 
 .Imagen-y-texto-3 { grid-area: Imagen-y-texto-3; }
-
-.Footer { grid-area: Footer; }
 
 @media screen and (max-width:768px){
 .container {
@@ -118,8 +114,7 @@ footer{
   "Texto-inicial"
   "Imagen-y-texto"
   "Imagen-y-texto-2"
-  "Imagen-y-texto-3"
-  "Footer";
+  "Imagen-y-texto-3";
 
 }
 }
