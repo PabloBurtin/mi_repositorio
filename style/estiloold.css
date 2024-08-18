@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgba(151, 147, 147, 0.775);
+  background-color: #979393c6;
 }
 .logo{
   background-color: transparent;
@@ -67,7 +67,7 @@ main{
 .lista-footer-pablo{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 15px;
-
+  
   list-style: none;}
 
 .size-pablo{
