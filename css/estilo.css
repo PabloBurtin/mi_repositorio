@@ -177,4 +177,52 @@ main {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .container-index {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "Imagen-inicial" "Imagen-predictivo" "Texto-predictivo" "Imagen-correctivo" "Texto-correctivo" "Imagen-instalacion" "Texto-instalacion" "referencias-comerciales";
+  }
+  .Imagen-inicial img {
+    width: 100%;
+    height: auto;
+  }
+  .Imagen-predictivo img {
+    width: 100%;
+    height: auto;
+  }
+  .Imagen-correctivo img {
+    width: 100%;
+    height: auto;
+  }
+  .Imagen-instalacion img {
+    width: 100%;
+    height: auto;
+  }
+  .referencias-comerciales img {
+    width: 100%;
+    height: auto;
+  }
+  .texto-predictivo {
+    margin: 10px;
+  }
+  .texto-correctivo {
+    margin: 10px;
+  }
+  .texto-instalacion {
+    margin: 10px;
+  }
+}
+.footer-pablo {
+  width: 100%;
+  background-color: rgba(151, 147, 147, 0.7764705882);
+  padding: 10px;
+}
+.footer-pablo .lista-footer-pablo {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  list-style: none;
+}
+
 /*# sourceMappingURL=estilo.css.map */
