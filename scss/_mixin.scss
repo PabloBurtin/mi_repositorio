@@ -1,0 +1,25 @@
+@mixin subtitulos{
+    color: $color-claro;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: $color-claro;
+    font-size: 2rem;
+}
+
+@mixin texto {
+    color: $color-claro;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+@mixin fondo{
+    background: $bg-fondo;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

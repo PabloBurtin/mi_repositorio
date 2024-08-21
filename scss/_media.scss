@@ -1,4 +1,108 @@
-@media (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container-index {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "Imagen-inicial Imagen-inicial"
+            "Imagen-predictivo Imagen-correctivo"
+            "Texto-predictivo Texto-correctivo"
+            "Imagen-instalacion Texto-instalacion"
+            "referencias-comerciales referencias-comerciales";
+    }
+
+    .Imagen-inicial {
+        grid-area: Imagen-inical;
+        img {
+    
+        width: 100%;
+        height: auto;
+    }}
+    .Imagen-predictivo
+    {grid-area:Imagen-predictivo ; img {
+        width: 100%;
+        height: auto;
+    }}
+    .Imagen-correctivo {
+        grid-area: Imagen-correctivo;
+        img {
+        width: 100%;
+        height: auto;
+    }}
+    .Imagen-instalacion{
+        grid-area: Imagen-instalacion; 
+    img {
+        width: 100%;
+        height: auto;
+    }}
+    .referencias-comerciales {
+        grid-area: referencias-comerciales;
+        img {
+        width: 100%;
+        height: auto;
+    }}
+
+    .texto-predictivo {
+        grid-area: texto-predictivo;
+        margin: 10px;
+    }
+    .texto-correctivo {
+        grid-area: texto-correctivo;
+        margin: 10px;
+    }
+    .texto-instalacion {
+        grid-area: texto-instalación;
+        margin: 10px;
+    }
+} 
+
+
+@media screen and (min-width: 401px) and (max-width: 768px) {
+    .container-index {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "Imagen-inicial"
+            "Imagen-predictivo"
+            "Texto-predictivo"
+            "Imagen-correctivo"
+            "Texto-correctivo"
+            "Imagen-instalacion"
+            "Texto-instalacion"
+            "referencias-comerciales";
+    }
+
+    .Imagen-inicial img {
+        width: 100%;
+        height: auto;
+    }
+    .Imagen-predictivo img {
+        width: 100%;
+        height: auto;
+    }
+    .Imagen-correctivo img {
+        width: 100%;
+        height: auto;
+    }
+    .Imagen-instalacion img {
+        width: 100%;
+        height: auto;
+    }
+    .referencias-comerciales img {
+        width: 100%;
+        height: auto;
+    }
+
+    .texto-predictivo {
+        margin: 10px;
+    }
+    .texto-correctivo {
+        margin: 10px;
+    }
+    .texto-instalacion {
+        margin: 10px;
+    }
+} 
+
+@media (max-width: 400px) {
     .container-index {
         grid-template-columns: 1fr;
         grid-template-rows: auto;

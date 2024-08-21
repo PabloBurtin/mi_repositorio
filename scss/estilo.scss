@@ -5,3 +5,8 @@
 @import "index";
 @import "media";
 @import "footer";
+@import "mixin";
+@import "contactos";
+
+body {
+    @include fondo;}
