@@ -10,7 +10,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgba(151, 147, 147, 0.7764705882);
+  background-color: rgba(166, 199, 249, 0.7764705882);
 }
 header .logo {
   background-color: transparent;
@@ -48,8 +48,6 @@ main {
   display: grid;
   margin: 0px 50px 0px 50px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
   gap: 20px;
   grid-template-rows: auto;
   grid-auto-flow: row;
@@ -210,43 +208,60 @@ main {
   margin: 20px auto;
 }
 
-@media (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .container-index {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "Imagen-inicial Imagen-inicial" "Imagen-predictivo Imagen-correctivo" "Texto-predictivo Texto-correctivo" "Imagen-instalacion Texto-instalacion" "referencias-comerciales";
+    grid-template-areas: "Imagen-inicial Imagen-inicial" "Imagen-predictivo Imagen-correctivo" "Texto-predictivo Texto-correctivo" "Imagen-instalacion Texto-instalacion" "referencias-comerciales referencias-comerciales";
+  }
+  .Imagen-inicial {
+    grid-area: Imagen-inical;
   }
   .Imagen-inicial img {
     width: 100%;
     height: auto;
   }
+  .Imagen-predictivo {
+    grid-area: Imagen-predictivo;
+  }
   .Imagen-predictivo img {
     width: 100%;
     height: auto;
+  }
+  .Imagen-correctivo {
+    grid-area: Imagen-correctivo;
   }
   .Imagen-correctivo img {
     width: 100%;
     height: auto;
   }
+  .Imagen-instalacion {
+    grid-area: Imagen-instalacion;
+  }
   .Imagen-instalacion img {
     width: 100%;
     height: auto;
+  }
+  .referencias-comerciales {
+    grid-area: referencias-comerciales;
   }
   .referencias-comerciales img {
     width: 100%;
     height: auto;
   }
   .texto-predictivo {
+    grid-area: texto-predictivo;
     margin: 10px;
   }
   .texto-correctivo {
+    grid-area: texto-correctivo;
     margin: 10px;
   }
   .texto-instalacion {
+    grid-area: texto-instalación;
     margin: 10px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (min-width: 401px) and (max-width: 768px) {
   .container-index {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -320,7 +335,7 @@ main {
 }
 .footer-pablo {
   width: 100%;
-  background-color: rgba(151, 147, 147, 0.7764705882);
+  background-color: rgba(166, 199, 249, 0.7764705882);
   padding: 10px;
 }
 .footer-pablo .lista-footer-pablo {
@@ -328,6 +343,7 @@ main {
   font-weight: bold;
   font-size: 18px;
   list-style: none;
+  line-height: 2;
 }
 
 .container-contactos {
@@ -400,14 +416,20 @@ main {
 .container-contactos .mapa-contacto {
   grid-area: mapa-contacto;
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  padding: 10px; /* Ajuste de espacio interno */
-  margin: 0 auto; /* Centrar horizontalmente si es necesario */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0 auto;
 }
 .container-contactos .mapa-contacto iframe {
-  max-width: 100%; /* Ajuste para que no exceda el ancho del contenedor */
-  height: auto; /* Mantener la relación de aspecto */
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background: url(../img/Mantenimiento-Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=estilo.css.map */
