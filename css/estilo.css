@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -45,6 +46,7 @@ main {
 
 .container-index {
   display: grid;
+  margin: 0px 50px 0px 50px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -57,25 +59,37 @@ main {
   grid-area: Imagen-inicial;
   display: flex;
   flex-direction: column;
-  padding: 2px auto;
+  padding: 15px auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .container-index .Imagen-inicial .subtitulo {
-  font-size: 4rem;
-  text-align: center;
   color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
 }
 .container-index .Imagen-inicial img {
   width: 600px;
   display: block;
-  margin: 0 auto;
+  margin: 25px auto;
 }
 .container-index .Imagen-inicial p {
   text-align: justify;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding: 2px auto;
   margin: 20px 20px 20px 20px;
   color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
   line-height: 2;
 }
 .container-index .Imagen-predictivo {
@@ -98,11 +112,15 @@ main {
   flex-direction: row;
   align-content: flex-start;
   text-align: justify;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 2px auto;
   margin: 20px 20px 20px 20px;
   color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
   line-height: 2;
 }
 .container-index .Imagen-correctivo {
@@ -125,11 +143,15 @@ main {
   flex-direction: row;
   align-content: flex-start;
   text-align: justify;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 2px auto;
   margin: 20px 20px 20px 20px;
   color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
   line-height: 2;
 }
 .container-index .Imagen-instalacion {
@@ -152,11 +174,15 @@ main {
   flex-direction: row;
   align-content: flex-start;
   text-align: justify;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 2px auto;
   margin: 20px 20px 20px 20px;
   color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
   line-height: 2;
 }
 .container-index .referencias-comerciales {
@@ -164,20 +190,99 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 75px;
+  padding-bottom: 25px;
 }
 .container-index .referencias-comerciales .subtitulo {
-  font-size: 4rem;
-  text-align: center;
   color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
 }
 .container-index .referencias-comerciales img {
   width: auto;
   height: 200px;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
+@media (max-width: 1024px) {
+  .container-index {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "Imagen-inicial Imagen-inicial" "Imagen-predictivo Imagen-correctivo" "Texto-predictivo Texto-correctivo" "Imagen-instalacion Texto-instalacion" "referencias-comerciales";
+  }
+  .Imagen-inicial img {
+    width: 100%;
+    height: auto;
+  }
+  .Imagen-predictivo img {
+    width: 100%;
+    height: auto;
+  }
+  .Imagen-correctivo img {
+    width: 100%;
+    height: auto;
+  }
+  .Imagen-instalacion img {
+    width: 100%;
+    height: auto;
+  }
+  .referencias-comerciales img {
+    width: 100%;
+    height: auto;
+  }
+  .texto-predictivo {
+    margin: 10px;
+  }
+  .texto-correctivo {
+    margin: 10px;
+  }
+  .texto-instalacion {
+    margin: 10px;
+  }
+}
 @media (max-width: 768px) {
+  .container-index {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "Imagen-inicial" "Imagen-predictivo" "Texto-predictivo" "Imagen-correctivo" "Texto-correctivo" "Imagen-instalacion" "Texto-instalacion" "referencias-comerciales";
+  }
+  .Imagen-inicial img {
+    width: 100%;
+    height: auto;
+  }
+  .Imagen-predictivo img {
+    width: 100%;
+    height: auto;
+  }
+  .Imagen-correctivo img {
+    width: 100%;
+    height: auto;
+  }
+  .Imagen-instalacion img {
+    width: 100%;
+    height: auto;
+  }
+  .referencias-comerciales img {
+    width: 100%;
+    height: auto;
+  }
+  .texto-predictivo {
+    margin: 10px;
+  }
+  .texto-correctivo {
+    margin: 10px;
+  }
+  .texto-instalacion {
+    margin: 10px;
+  }
+}
+@media (max-width: 400px) {
   .container-index {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -223,6 +328,86 @@ main {
   font-weight: bold;
   font-size: 18px;
   list-style: none;
+}
+
+.container-contactos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 10px;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  grid-template-areas: "nombre-contacto subtitulo" "mail-contacto mapa-contacto" "telefono-contacto mapa-contacto" "mensaje-contacto mapa-contacto" "boton mapa-contacto";
+}
+.container-contactos .nombre-contacto {
+  grid-area: nombre-contacto;
+  margin: 10px;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.container-contactos .mail-contacto {
+  grid-area: mail-contacto;
+  margin: 10px;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.container-contactos .telefono-contacto {
+  grid-area: telefono-contacto;
+  margin: 10px;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.container-contactos .mensaje-contacto {
+  grid-area: mensaje-contacto;
+  padding: 10px;
+  margin: 10px;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.container-contactos .boton {
+  grid-area: boton;
+}
+.container-contactos .subtitulo {
+  grid-area: subtitulo;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: aliceblue;
+  font-size: 2rem;
+}
+.container-contactos .mapa-contacto {
+  grid-area: mapa-contacto;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  padding: 10px; /* Ajuste de espacio interno */
+  margin: 0 auto; /* Centrar horizontalmente si es necesario */
+}
+.container-contactos .mapa-contacto iframe {
+  max-width: 100%; /* Ajuste para que no exceda el ancho del contenedor */
+  height: auto; /* Mantener la relación de aspecto */
 }
 
 /*# sourceMappingURL=estilo.css.map */

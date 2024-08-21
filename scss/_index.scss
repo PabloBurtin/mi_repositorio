@@ -1,9 +1,9 @@
+@import "mixin";
+
 .container-index {
     display: grid;
-
+    margin: 0px 50px 0px 50px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
     gap: 20px;
     grid-template-rows: auto;
     grid-auto-flow: row;
@@ -18,24 +18,26 @@
         grid-area: Imagen-inicial;
         display: flex;
         flex-direction: column;
-        padding: 2px auto;
+        padding: 15px auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
         .subtitulo{
-            font-size: 4rem;
+           @include subtitulos;
             text-align: center;
-            color: $color-claro;
+            margin-bottom: 15px;
+           
         }
 
         img {width: 600px;
             display: block;
-            margin: 0 auto;
+            margin: 25px auto;
        }
         p{
             text-align: justify;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             padding: 2px auto;
             margin: 20px 20px 20px 20px;
-            color: $color-claro;
+            @include texto;
             line-height: 2;
         }
     }
@@ -61,11 +63,10 @@
         flex-direction: row;
         align-content: flex-start;
         text-align: justify;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding: 2px auto;
         margin: 20px 20px 20px 20px;
-        color: $color-claro;
+        @include texto;
         line-height: 2;
         }
     
@@ -89,12 +90,11 @@
         flex-direction: row;
         align-content: flex-start;
         text-align: justify;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 1.5rem;
-        padding: 2px auto;
-        margin: 20px 20px 20px 20px;
-        color: $color-claro;
-        line-height: 2;
+            font-size: 1.2rem;
+            padding: 2px auto;
+            margin: 20px 20px 20px 20px;
+            @include texto;
+            line-height: 2;
     }
 
     .Imagen-instalacion{
@@ -118,11 +118,10 @@
         flex-direction: row;
         align-content: flex-start;
         text-align: justify;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding: 2px auto;
         margin: 20px 20px 20px 20px;
-        color: $color-claro;
+        @include texto;
         line-height: 2;
     }
     .referencias-comerciales{
@@ -130,17 +129,19 @@
         display: flex;
         flex-direction: column; 
         align-items: center; 
+        margin-bottom: 75px;
+        padding-bottom: 25px;
     
         .subtitulo{
-            font-size: 4rem;
+            @include subtitulos;
             text-align: center;
-            color: $color-claro;
+            
         }
         img{
             width: auto;
             height: 200px;
             display: block; 
-            margin: 0 auto; 
+            margin: 20px auto; 
 
         }
     }

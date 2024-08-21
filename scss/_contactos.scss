@@ -1,0 +1,63 @@
+.container-contactos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 10px;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nombre-contacto subtitulo"
+      "mail-contacto mapa-contacto"
+      "telefono-contacto mapa-contacto"
+      "mensaje-contacto mapa-contacto"
+      "boton mapa-contacto";
+
+.nombre-contacto{
+    grid-area: nombre-contacto;
+    margin: 10px;
+    @include texto;
+}
+.mail-contacto{
+    grid-area: mail-contacto;
+    margin: 10px;
+    @include texto;
+}
+.telefono-contacto{
+    grid-area: telefono-contacto;
+    margin: 10px;
+    @include texto;
+}
+.mensaje-contacto{
+    grid-area: mensaje-contacto;
+    padding: 10px;
+    margin: 10px;
+    @include texto;
+}
+.boton{
+    grid-area: boton;
+}
+.subtitulo{
+    grid-area: subtitulo;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    @include subtitulos;
+    
+}
+.mapa-contacto {
+    grid-area: mapa-contacto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    padding: 10px;            
+    margin: 0 auto;           
+}
+
+.mapa-contacto iframe {
+    max-width: 100%;          
+    height: auto;             
+}
+
+
+}
