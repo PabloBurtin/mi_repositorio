@@ -429,52 +429,8 @@ main {
   margin: 0 auto;
 }
 .container-contactos .mapa-contacto iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  .container-contactos {
-    width: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "nombre-contacto" "mail-contacto" "telefono-contacto" "mensaje-contacto" "boton" "subtitulo" "mapa-contacto";
-  }
-  .nombre-contacto {
-    grid-area: nombre-contacto;
-  }
-  .mail-contacto {
-    grid-area: mail-contacto;
-  }
-  .telefono-contacto {
-    grid-area: telefono-contacto;
-  }
-  .mensaje-contacto {
-    grid-area: mensaje-contacto;
-  }
-  .boton {
-    grid-area: boton;
-  }
-  .subtitulo {
-    grid-area: subtitulo;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-  .mapa-contacto {
-    grid-area: mapa-contacto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 0 auto;
-  }
-}
-body {
-  background: url(../img/Mantenimiento-Background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  max-width: 100%; /* Ajuste para que no exceda el ancho del contenedor */
+  height: auto; /* Mantener la relación de aspecto */
 }
 
 /*# sourceMappingURL=estilo.css.map */
