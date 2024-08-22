@@ -5,11 +5,14 @@ header{
     align-items: center;
     padding: 10px 20px;
     background-color: $bg-claro;
+    width: 100%;
 
     .logo{
         background-color: $bg-transparente;
         img{
             width: 100px;
+            margin: 25px;
+
         }
     }
     .titulo{

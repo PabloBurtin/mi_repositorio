@@ -23,3 +23,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@mixin subtitulo2{ color: $color-claro;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: $color-claro;
+    font-size: 1.4rem;
+
+}

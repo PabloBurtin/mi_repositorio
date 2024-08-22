@@ -11,12 +11,14 @@ header {
   align-items: center;
   padding: 10px 20px;
   background-color: rgba(166, 199, 249, 0.7764705882);
+  width: 100%;
 }
 header .logo {
   background-color: transparent;
 }
 header .logo img {
   width: 100px;
+  margin: 25px;
 }
 header .titulo {
   font-family: "Anton SC", sans-serif;
@@ -426,11 +428,12 @@ main {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  margin: 0 auto;
+  margin-bottom: 50px;
 }
 .container-contactos .mapa-contacto iframe {
   max-width: 100%;
   height: auto;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
@@ -471,24 +474,30 @@ main {
     margin: 0 auto;
   }
 }
-body {
-  background: url(../img/Mantenimiento-Background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.container-productos .subtitulo {
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 50px;
 }
-
 .container-productos .size-card {
   width: 300px;
   height: 500px;
-  padding: 15px auto;
-  margin: 20px auto;
+  padding: 25px auto;
+  margin: 25px auto;
   background-color: transparent;
-  display: flex;
-  justify-self: center;
-  align-self: center;
+  border: none;
 }
-.container-productos .size-card img {
-  width: 250px;
+.container-productos .size-card .img-producto {
+  width: 300px;
+  display: flex;
+  justify-content: center;
 }
 .container-productos .size-card .card-body .producto {
   color: aliceblue;
@@ -497,7 +506,8 @@ body {
   font-weight: weight;
   font-style: normal;
   color: aliceblue;
-  font-size: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
 }
 .container-productos .size-card .card-body .descripcion {
   color: aliceblue;
@@ -506,6 +516,12 @@ body {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+
+body {
+  background: url(../img/Mantenimiento-Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=estilo.css.map */
