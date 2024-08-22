@@ -10,7 +10,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgba(151, 147, 147, 0.7764705882);
+  background-color: rgba(166, 199, 249, 0.7764705882);
 }
 header .logo {
   background-color: transparent;
@@ -335,7 +335,7 @@ main {
 }
 .footer-pablo {
   width: 100%;
-  background-color: rgba(151, 147, 147, 0.7764705882);
+  background-color: rgba(166, 199, 249, 0.7764705882);
   padding: 10px;
 }
 .footer-pablo .lista-footer-pablo {
@@ -343,6 +343,7 @@ main {
   font-weight: bold;
   font-size: 18px;
   list-style: none;
+  line-height: 2;
 }
 
 .container-contactos {
@@ -474,6 +475,37 @@ body {
   background: url(../img/Mantenimiento-Background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.container-productos .size-card {
+  width: 300px;
+  height: 500px;
+  padding: 15px auto;
+  margin: 20px auto;
+  background-color: transparent;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+.container-productos .size-card img {
+  width: 250px;
+}
+.container-productos .size-card .card-body .producto {
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: aliceblue;
+  font-size: 2rem;
+}
+.container-productos .size-card .card-body .descripcion {
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 /*# sourceMappingURL=estilo.css.map */
