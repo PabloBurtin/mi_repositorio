@@ -533,4 +533,37 @@ body {
   background-size: cover;
 }
 
+.sobre-nosotros .historia .subtitulo {
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 15px;
+}
+.sobre-nosotros .historia .imagen-historia {
+  display: flex;
+  padding: 10px auto;
+  align-content: center;
+  margin: 15 px auto;
+}
+.sobre-nosotros .historia .imagen-historia img {
+  width: 400px;
+  align-content: center;
+}
+.sobre-nosotros .historia .parrafo-historia .texto {
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 2;
+  margin: 15px 15px 15px 15px;
+  text-align: justify;
+}
+
 /*# sourceMappingURL=estilo.css.map */
