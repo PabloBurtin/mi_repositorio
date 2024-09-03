@@ -71,7 +71,7 @@ main {
   font-weight: weight;
   font-style: normal;
   color: aliceblue;
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -91,6 +91,7 @@ main {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
   line-height: 2;
 }
 .container-index .Imagen-predictivo {
@@ -122,6 +123,7 @@ main {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
   line-height: 2;
 }
 .container-index .Imagen-correctivo {
@@ -153,6 +155,7 @@ main {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
   line-height: 2;
 }
 .container-index .Imagen-instalacion {
@@ -184,6 +187,7 @@ main {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
   line-height: 2;
 }
 .container-index .referencias-comerciales {
@@ -201,7 +205,7 @@ main {
   font-weight: weight;
   font-style: normal;
   color: aliceblue;
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-align: center;
 }
 .container-index .referencias-comerciales img {
@@ -369,6 +373,7 @@ main {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
 }
 .container-contactos .mail-contacto {
   grid-area: mail-contacto;
@@ -380,6 +385,7 @@ main {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
 }
 .container-contactos .telefono-contacto {
   grid-area: telefono-contacto;
@@ -391,6 +397,7 @@ main {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
 }
 .container-contactos .mensaje-contacto {
   grid-area: mensaje-contacto;
@@ -402,6 +409,7 @@ main {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
 }
 .container-contactos .boton {
   grid-area: boton;
@@ -421,7 +429,7 @@ main {
   font-weight: weight;
   font-style: normal;
   color: aliceblue;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 .container-contactos .mapa-contacto {
   grid-area: mapa-contacto;
@@ -482,7 +490,7 @@ main {
   font-weight: weight;
   font-style: normal;
   color: aliceblue;
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-align: center;
   font-size: 2rem;
   margin-top: 50px;
@@ -508,7 +516,7 @@ main {
   font-weight: weight;
   font-style: normal;
   color: aliceblue;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 .container-productos .size-card .card-body .descripcion {
@@ -518,6 +526,7 @@ main {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
 }
 .container-productos .size-card:hover {
   transform: scale(1.1);
@@ -527,12 +536,6 @@ main {
   margin: 25px auto;
 }
 
-body {
-  background: url(../img/Mantenimiento-Background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .sobre-nosotros .historia .subtitulo {
   color: aliceblue;
   font-family: "Montserrat", sans-serif;
@@ -540,19 +543,17 @@ body {
   font-weight: weight;
   font-style: normal;
   color: aliceblue;
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-align: center;
-  margin-top: 15px;
+  margin: 50px;
 }
 .sobre-nosotros .historia .imagen-historia {
-  display: flex;
-  padding: 10px auto;
-  align-content: center;
-  margin: 15 px auto;
+  padding: 10px;
+  margin: 15px;
 }
 .sobre-nosotros .historia .imagen-historia img {
+  text-align: center;
   width: 400px;
-  align-content: center;
 }
 .sobre-nosotros .historia .parrafo-historia .texto {
   color: aliceblue;
@@ -561,9 +562,155 @@ body {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+  line-height: 2;
+  padding: 5px;
+  margin: 25px;
+  text-align: justify;
+}
+.sobre-nosotros .objetivo .subtitulo {
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: aliceblue;
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 15px auto;
+}
+.sobre-nosotros .objetivo .imagen-objetivo {
+  display: flex;
+  padding: 10px auto;
+  align-content: center;
+  margin: 15 px auto;
+}
+.sobre-nosotros .objetivo .imagen-objetivo img {
+  width: 300px;
+  align-content: center;
+}
+.sobre-nosotros .objetivo .parrafo-objetivo .texto {
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
   line-height: 2;
   margin: 15px 15px 15px 15px;
   text-align: justify;
+}
+.sobre-nosotros .objetivo .parrafo-objetivo img {
+  height: 50px;
+  width: auto;
+}
+.sobre-nosotros .principios-valores .subtitulo {
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: aliceblue;
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 15px auto;
+}
+.sobre-nosotros .principios-valores .valor1 {
+  display: flex;
+}
+.sobre-nosotros .principios-valores .valor1 .img-pb {
+  width: 100px;
+}
+.sobre-nosotros .principios-valores .valor1 .texto {
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 15px 15px 15px 15px;
+  text-align: justify;
+}
+.sobre-nosotros .principios-valores .valor2 {
+  display: flex;
+}
+.sobre-nosotros .principios-valores .valor2 .img-pb {
+  width: 100px;
+}
+.sobre-nosotros .principios-valores .valor2 .texto {
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 15px 15px 15px 15px;
+  text-align: justify;
+}
+.sobre-nosotros .principios-valores .valor3 {
+  display: flex;
+}
+.sobre-nosotros .principios-valores .valor3 .img-pb {
+  width: 100px;
+}
+.sobre-nosotros .principios-valores .valor3 .texto {
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 15px 15px 15px 15px;
+  text-align: justify;
+}
+.sobre-nosotros .principios-valores .valor4 {
+  display: flex;
+}
+.sobre-nosotros .principios-valores .valor4 .img-pb {
+  width: 100px;
+}
+.sobre-nosotros .principios-valores .valor4 .texto {
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 15px 15px 15px 15px;
+  text-align: justify;
+}
+.sobre-nosotros .principios-valores .valor5 {
+  display: flex;
+}
+.sobre-nosotros .principios-valores .valor5 .img-pb {
+  width: 100px;
+}
+.sobre-nosotros .principios-valores .valor5 .texto {
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 15px 15px 15px 15px;
+  text-align: justify;
+}
+
+body {
+  background: url(../img/Mantenimiento-Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=estilo.css.map */

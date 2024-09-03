@@ -8,40 +8,8 @@
 @import "mixin";
 @import "contactos";
 @import "productos";
+@import "sobre-nosotros";
 
 body {
     @include fondo;}
 
-.sobre-nosotros{
-
-    .historia{
-        .subtitulo{
-            @include subtitulos;
-            text-align: center;
-            margin-top: 15px;
-        }
-        .imagen-historia{
-            display: flex;
-            padding: 10px auto;
-            align-content: center;
-            margin: 15 px auto;
-            img{
-                width: 400px;
-                align-content: center;
-            
-            }
-        }
-        .parrafo-historia{
-            .texto{
-                @include texto;
-                line-height: 2;
-                margin: 15px 15px 15px 15px;
-                text-align: justify;
-            }
-        }
-    }
-
-    .objetivo{}
-
-    .principios-valores{}
-}  

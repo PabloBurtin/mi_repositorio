@@ -1,0 +1,146 @@
+@import "mixin";
+
+
+
+.sobre-nosotros{
+
+    .historia{
+       
+        .subtitulo{
+            @include subtitulos;
+            text-align: center;
+            margin: 50px;
+        }
+        .imagen-historia{
+            padding: 10px;
+            margin: 15px;
+           
+            img{
+                text-align: center;
+                width: 400px;
+            }
+        }
+        .parrafo-historia{
+            .texto{
+                @include texto;
+                line-height: 2;
+                padding: 5px;
+                margin: 25px;
+                text-align: justify;
+            }
+        }
+    }
+
+    .objetivo{
+        .subtitulo{ @include subtitulos;
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .imagen-objetivo{
+            display: flex;
+            padding: 10px auto;
+            align-content: center;
+            margin: 15 px auto;
+            img{
+                width: 300px;
+                align-content: center;
+            
+            }
+        }
+
+        .parrafo-objetivo{
+            .texto{
+                @include texto;
+                line-height: 2;
+                margin: 15px 15px 15px 15px;
+                text-align: justify;
+            }
+            img{
+                height: 50px;
+                width: auto;
+            }
+        }
+
+    }
+
+
+    .principios-valores{
+        .subtitulo{
+            @include subtitulos;
+            text-align: center;
+            margin: 15px auto;
+        }
+        .valor1{
+            display: flex;
+            .img-pb{
+                width: 100px;
+            }
+            .texto{
+                @include texto;
+                line-height: 2;
+                margin: 15px 15px 15px 15px;
+                text-align: justify;
+            }
+
+        }
+
+        .valor2{
+            display: flex;
+            .img-pb{
+                width: 100px;
+            }
+            .texto{
+                @include texto;
+                line-height: 2;
+                margin: 15px 15px 15px 15px;
+                text-align: justify;
+            }
+
+        }
+
+        .valor3{
+            display: flex;
+            .img-pb{
+                width: 100px;
+            }
+            .texto{
+                @include texto;
+                line-height: 2;
+                margin: 15px 15px 15px 15px;
+                text-align: justify;
+            }
+
+        }
+
+        .valor4{
+            display: flex;
+            .img-pb{
+                width: 100px;
+            }
+            .texto{
+                @include texto;
+                line-height: 2;
+                margin: 15px 15px 15px 15px;
+                text-align: justify;
+            }
+
+        }
+
+        .valor5{
+            display: flex;
+            .img-pb{
+                width: 100px;
+            }
+            .texto{
+                @include texto;
+                line-height: 2;
+                margin: 15px 15px 15px 15px;
+                text-align: justify;
+            }
+
+        }
+
+
+    }
+}  
