@@ -14,10 +14,12 @@
         .imagen-historia{
             padding: 10px;
             margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
            
             img{
-                text-align: center;
-                width: 400px;
+                width: 450px;
             }
         }
         .parrafo-historia{
@@ -40,12 +42,11 @@
         .imagen-objetivo{
             display: flex;
             padding: 10px auto;
-            align-content: center;
-            margin: 15 px auto;
+            justify-content: center;
+            align-items: center;
+            margin: 15px auto;
             img{
                 width: 300px;
-                align-content: center;
-            
             }
         }
 
@@ -74,7 +75,7 @@
         .valor1{
             display: flex;
             .img-pb{
-                width: 100px;
+                width: 300px;
             }
             .texto{
                 @include texto;
@@ -88,7 +89,7 @@
         .valor2{
             display: flex;
             .img-pb{
-                width: 100px;
+                width: 300px;
             }
             .texto{
                 @include texto;
@@ -102,7 +103,7 @@
         .valor3{
             display: flex;
             .img-pb{
-                width: 100px;
+                width: 300px;
             }
             .texto{
                 @include texto;
@@ -116,7 +117,7 @@
         .valor4{
             display: flex;
             .img-pb{
-                width: 100px;
+                width: 300px;
             }
             .texto{
                 @include texto;
@@ -130,7 +131,7 @@
         .valor5{
             display: flex;
             .img-pb{
-                width: 100px;
+                width: 300px;
             }
             .texto{
                 @include texto;

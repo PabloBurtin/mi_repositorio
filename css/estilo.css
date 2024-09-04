@@ -9,7 +9,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 10px;
   background-color: rgba(166, 199, 249, 0.7764705882);
   width: 100%;
 }
@@ -17,12 +17,12 @@ header .logo {
   background-color: transparent;
 }
 header .logo img {
-  width: 100px;
-  margin: 25px;
+  width: 75px;
+  margin: 10px;
 }
 header .titulo {
   font-family: "Anton SC", sans-serif;
-  font-weight: 200;
+  font-weight: 150;
   font-style: normal;
 }
 header .nav-link-pablo {
@@ -34,7 +34,7 @@ header .nav-link-pablo {
   font-weight: bold;
   align-content: last baseline;
   justify-content: space-between;
-  padding: 10px;
+  margin: 10px 10px;
 }
 header .nav-link-pablo:hover {
   color: blue;
@@ -60,9 +60,11 @@ main {
   grid-area: Imagen-inicial;
   display: flex;
   flex-direction: column;
-  padding: 15px auto;
+  padding: 15px;
   margin-top: 50px;
   margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
 }
 .container-index .Imagen-inicial .subtitulo {
   color: aliceblue;
@@ -76,14 +78,14 @@ main {
   margin-bottom: 15px;
 }
 .container-index .Imagen-inicial img {
-  width: 600px;
+  width: 400px;
   display: block;
-  margin: 25px auto;
+  margin: 15px;
 }
 .container-index .Imagen-inicial p {
   text-align: justify;
   font-size: 1.6rem;
-  padding: 2px auto;
+  padding: 2px;
   margin: 20px 20px 20px 20px;
   color: aliceblue;
   font-family: "Open Sans", sans-serif;
@@ -104,7 +106,7 @@ main {
 }
 .container-index .Imagen-predictivo img {
   width: auto;
-  height: 300px;
+  height: 250px;
   display: block;
   margin: 0 auto;
 }
@@ -115,7 +117,7 @@ main {
   align-content: flex-start;
   text-align: justify;
   font-size: 1.2rem;
-  padding: 2px auto;
+  padding: 2px;
   margin: 20px 20px 20px 20px;
   color: aliceblue;
   font-family: "Open Sans", sans-serif;
@@ -136,7 +138,7 @@ main {
 }
 .container-index .Imagen-correctivo img {
   width: auto;
-  height: 300px;
+  height: 250px;
   display: block;
   margin: 0 auto;
 }
@@ -147,7 +149,7 @@ main {
   align-content: flex-start;
   text-align: justify;
   font-size: 1.2rem;
-  padding: 2px auto;
+  padding: 2px;
   margin: 20px 20px 20px 20px;
   color: aliceblue;
   font-family: "Open Sans", sans-serif;
@@ -168,7 +170,7 @@ main {
 }
 .container-index .Imagen-instalacion img {
   width: auto;
-  height: 300px;
+  height: 250px;
   display: block;
   margin: 0 auto;
 }
@@ -179,7 +181,7 @@ main {
   align-content: flex-start;
   text-align: justify;
   font-size: 1.2rem;
-  padding: 2px auto;
+  padding: 2px;
   margin: 20px 20px 20px 20px;
   color: aliceblue;
   font-family: "Open Sans", sans-serif;
@@ -212,10 +214,10 @@ main {
   width: auto;
   height: 200px;
   display: block;
-  margin: 20px auto;
+  margin: 20px;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1224px) {
   .container-index {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "Imagen-inicial Imagen-inicial" "Imagen-predictivo Imagen-correctivo" "Texto-predictivo Texto-correctivo" "Imagen-instalacion Texto-instalacion" "referencias-comerciales referencias-comerciales";
@@ -258,14 +260,17 @@ main {
   .texto-predictivo {
     grid-area: texto-predictivo;
     margin: 10px;
+    padding-bottom: 20px;
   }
   .texto-correctivo {
     grid-area: texto-correctivo;
     margin: 10px;
+    padding-bottom: 20px;
   }
   .texto-instalacion {
     grid-area: texto-instalación;
     margin: 10px;
+    padding-bottom: 20px;
   }
 }
 @media screen and (min-width: 401px) and (max-width: 768px) {
@@ -296,12 +301,15 @@ main {
   }
   .texto-predictivo {
     margin: 10px;
+    padding-bottom: 20px;
   }
   .texto-correctivo {
     margin: 10px;
+    padding-bottom: 20px;
   }
   .texto-instalacion {
     margin: 10px;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 400px) {
@@ -332,12 +340,15 @@ main {
   }
   .texto-predictivo {
     margin: 10px;
+    padding-bottom: 20px;
   }
   .texto-correctivo {
     margin: 10px;
+    padding-bottom: 20px;
   }
   .texto-instalacion {
     margin: 10px;
+    padding-bottom: 20px;
   }
 }
 .footer-pablo {
@@ -440,8 +451,6 @@ main {
   margin-bottom: 50px;
 }
 .container-contactos .mapa-contacto iframe {
-  max-width: 100%;
-  height: auto;
   margin-bottom: 50px;
 }
 
@@ -550,10 +559,12 @@ main {
 .sobre-nosotros .historia .imagen-historia {
   padding: 10px;
   margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sobre-nosotros .historia .imagen-historia img {
-  text-align: center;
-  width: 400px;
+  width: 450px;
 }
 .sobre-nosotros .historia .parrafo-historia .texto {
   color: aliceblue;
@@ -582,12 +593,12 @@ main {
 .sobre-nosotros .objetivo .imagen-objetivo {
   display: flex;
   padding: 10px auto;
-  align-content: center;
-  margin: 15 px auto;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
 }
 .sobre-nosotros .objetivo .imagen-objetivo img {
   width: 300px;
-  align-content: center;
 }
 .sobre-nosotros .objetivo .parrafo-objetivo .texto {
   color: aliceblue;
@@ -620,7 +631,7 @@ main {
   display: flex;
 }
 .sobre-nosotros .principios-valores .valor1 .img-pb {
-  width: 100px;
+  width: 300px;
 }
 .sobre-nosotros .principios-valores .valor1 .texto {
   color: aliceblue;
@@ -638,7 +649,7 @@ main {
   display: flex;
 }
 .sobre-nosotros .principios-valores .valor2 .img-pb {
-  width: 100px;
+  width: 300px;
 }
 .sobre-nosotros .principios-valores .valor2 .texto {
   color: aliceblue;
@@ -656,7 +667,7 @@ main {
   display: flex;
 }
 .sobre-nosotros .principios-valores .valor3 .img-pb {
-  width: 100px;
+  width: 300px;
 }
 .sobre-nosotros .principios-valores .valor3 .texto {
   color: aliceblue;
@@ -674,7 +685,7 @@ main {
   display: flex;
 }
 .sobre-nosotros .principios-valores .valor4 .img-pb {
-  width: 100px;
+  width: 300px;
 }
 .sobre-nosotros .principios-valores .valor4 .texto {
   color: aliceblue;
@@ -692,7 +703,7 @@ main {
   display: flex;
 }
 .sobre-nosotros .principios-valores .valor5 .img-pb {
-  width: 100px;
+  width: 300px;
 }
 .sobre-nosotros .principios-valores .valor5 .texto {
   color: aliceblue;

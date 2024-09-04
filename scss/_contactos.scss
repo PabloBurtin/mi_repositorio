@@ -59,14 +59,15 @@
     justify-content: center; 
     align-items: center;      
     padding: 10px;            
-    margin-bottom: 50px;          
+    margin-bottom: 50px;  
+    
+    iframe {
+        
+        margin-bottom: 50px;            
+    }
 }
 
-.mapa-contacto iframe {
-    max-width: 100%;          
-    height: auto;
-    margin-bottom: 50px;            
-}
+
 
 
 }

@@ -1,4 +1,4 @@
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1224px) {
     .container-index {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -43,14 +43,17 @@
     .texto-predictivo {
         grid-area: texto-predictivo;
         margin: 10px;
+        padding-bottom: 20px;
     }
     .texto-correctivo {
         grid-area: texto-correctivo;
         margin: 10px;
+        padding-bottom: 20px;
     }
     .texto-instalacion {
         grid-area: texto-instalación;
         margin: 10px;
+        padding-bottom: 20px;
     }
 } 
 
@@ -93,12 +96,15 @@
 
     .texto-predictivo {
         margin: 10px;
+        padding-bottom: 20px;
     }
     .texto-correctivo {
         margin: 10px;
+        padding-bottom: 20px;
     }
     .texto-instalacion {
         margin: 10px;
+        padding-bottom: 20px;
     }
 } 
 
@@ -140,12 +146,15 @@
 
     .texto-predictivo {
         margin: 10px;
+        padding-bottom: 20px;
     }
     .texto-correctivo {
         margin: 10px;
+        padding-bottom: 20px;
     }
     .texto-instalacion {
         margin: 10px;
+        padding-bottom: 20px;
     }
 } 
 
