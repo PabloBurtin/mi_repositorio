@@ -16,11 +16,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Sobre Nosotros</title>
 </head>
 <body>
@@ -97,7 +97,10 @@
         <Section class="principios-valores">
             <!-- Valores y principios-->
             <h3 class="subtitulo"> Nuestros principios y valores</h3>
-            <div class="valor1">
+            <div class="valor1" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+            
                 <img class="img-pb" src="../img/ambiente-laboral.jpg" alt="ambiente laboral distendido">
                 <p class="texto">
                     Fomentamos un ambiente laboral de respeto e igualdad, una atmósfera humanitaria de comuncación abierta y un lugar de trabajo libre de discriminación, acoso sexual y otras formas de intoleracia y violencia.
@@ -140,5 +143,6 @@
             </ul>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
