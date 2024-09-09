@@ -51,6 +51,10 @@
         }
 
         .parrafo-objetivo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
             .texto{
                 @include texto;
                 line-height: 2;
@@ -58,7 +62,8 @@
                 text-align: justify;
             }
             img{
-                height: 50px;
+              
+                height: 200px;
                 width: auto;
             }
         }
@@ -74,6 +79,7 @@
         }
         .valor1{
             display: flex;
+            margin: 25px;
             .img-pb{
                 width: 300px;
             }
@@ -88,6 +94,8 @@
 
         .valor2{
             display: flex;
+            margin: 25px;
+            flex-direction: row-reverse;
             .img-pb{
                 width: 300px;
             }
@@ -102,6 +110,8 @@
 
         .valor3{
             display: flex;
+            margin: 25px;
+            flex-direction: row-reverse;
             .img-pb{
                 width: 300px;
             }
@@ -116,6 +126,8 @@
 
         .valor4{
             display: flex;
+            margin: 25px;
+            flex-direction: row-reverse;
             .img-pb{
                 width: 300px;
             }
@@ -130,6 +142,7 @@
 
         .valor5{
             display: flex;
+            margin: 25px;
             .img-pb{
                 width: 300px;
             }

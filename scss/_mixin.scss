@@ -5,7 +5,7 @@
     font-weight: weight;
     font-style: normal;
     color: $color-claro;
-    font-size: 2.3rem;
+    font-size: 2.9rem;
 }
 
 @mixin texto {
@@ -31,6 +31,37 @@
     font-weight: weight;
     font-style: normal;
     color: $color-claro;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
 
+}
+
+@mixin subtitulo3{ color: $color-claro;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: $color-claro;
+    font-size: 1.9rem;
+
+}
+
+@mixin subtitulo4{ color: $color-claro;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: $color-claro;
+    font-size: 1.6rem;
+
+}
+
+@mixin icono{ width: 75px;
+    padding: 5px;
+    background-color: $bg-claro;
+
+}
+
+@mixin img-mtto{
+    width: auto;
+    height: 250px;
 }

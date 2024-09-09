@@ -1,0 +1,636 @@
+@import "mixin";
+
+.servicios{
+    display: grid;
+    margin: 0px 10px 0px 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "subtitulo subtitulo subtitulo"
+    "mantenimiento mantenimiento mantenimiento"
+    "obras obras obras"
+    "cobertura cobertura cobertura"
+    ;
+
+.subtitulo{
+    grid-area: subtitulo;
+        @include subtitulos;
+        text-align: center;
+        margin: 15px;
+        padding: 10px;
+    }
+    .mantenimiento{
+    grid-area: mantenimiento;
+    display: grid;
+    margin: 0px 15px 0px 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "intro-mantenimiento intro-mantenimiento intro-mantenimiento"
+    "descripcion-mantenimiento descripcion-mantenimiento descripcion-mantenimiento"
+    "rubros-mantenimiento rubros-mantenimiento rubros-mantenimiento"
+    ;
+
+        .intro-mantenimiento{
+            grid-area: intro-mantenimiento;
+            .sub-mantenimiento{
+                grid-area: sub-mantenimiento;
+                @include subtitulo2;
+                text-align: center;
+                margin: 10px;
+                padding: 5px;
+            }
+            .texto-mantenimiento{
+                grid-area: texto-mantenimiento;
+                @include texto;
+                text-align: justify;
+                margin: 15px;
+            }
+        }
+        .descripcion-mantenimiento{
+            grid-area: descripcion-mantenimiento;
+            display: grid;
+            margin: 0px 15px 0px 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            grid-template-rows: auto;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "sub2-mantenimiento sub2-mantenimiento sub2-mantenimiento"
+            "servicio1 servicio2 servicio3"
+            "servicio4 servicio5 servicio6";
+
+            .sub2-mantenimiento{
+                grid-area: sub2-mantenimiento;
+                @include subtitulo3;
+                text-align: center;
+                padding: 20px;
+                margin:15px;
+            }
+            .servicio1{
+                grid-area: servicio1;
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                justify-content: center;
+                align-items: center;
+                .icono{
+                    @include icono;
+                   
+                }
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .texto{
+                    @include texto;
+                    text-align: justify;
+                    margin: 5px;
+                    line-height: 1.5;
+                }
+
+            }
+            .servicio2{
+                grid-area: servicio2;
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                justify-content: center;
+                align-items: center;
+                .icono{
+                    @include icono;
+                   
+                }
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .texto{
+                    @include texto;
+                    text-align: justify;
+                    margin: 5px;
+                    line-height: 1.5;
+                }
+            }
+            .servicio3{
+                grid-area: servicio3;
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                justify-content: center;
+                align-items: center;
+                .icono{
+                    @include icono;
+                   
+                }
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center;
+                }
+                .texto{
+                    @include texto;
+                    text-align: justify;
+                    margin: 5px;
+                    line-height: 1.5;
+                }
+            }
+            .servicio4{
+                grid-area: servicio4;
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                justify-content: center;
+                align-items: center;
+                .icono{
+                    @include icono;
+                   
+                }
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center;
+                }
+                .texto{
+                    @include texto;
+                    text-align: justify;
+                    margin: 5px;
+                    line-height: 1.5;
+                }
+            }
+            .servicio5{
+                grid-area: servicio5;
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                justify-content: center;
+                align-items: center;
+                .icono{
+                    @include icono;
+                   
+                }
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center;
+                }
+                .texto{
+                    @include texto;
+                    text-align: justify;
+                    margin: 5px;
+                    line-height: 1.5;
+                }
+            }
+            .servicio6{
+                grid-area: servicio6;
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                justify-content: center;
+                align-items: center;
+                .icono{
+                    @include icono;
+                   
+                }
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center;
+                }
+                .texto{
+                    @include texto;
+                    text-align: justify;
+                    margin: 5px;
+                    line-height: 1.5;
+                }
+            }
+        }
+        .rubros-mantenimiento{
+            grid-area: rubros-mantenimiento;
+            display: grid;
+            margin: 0px 15px 0px 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            grid-template-rows: auto;
+            grid-auto-flow: row;
+            grid-template-areas:
+         "sub2-rubros sub2-rubros sub2-rubros"
+         "electricidad refrigeracion plomeria-mtto"
+         "vidreria herreria pintura";
+
+            .sub2-rubros{
+                grid-area: sub2-rubros;
+                @include subtitulo3;
+                text-align: center;
+                padding: 15px;
+                margin:15px;
+            }
+            .electricidad{
+                grid-area: electricidad;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .img-mtto{
+                    @include img-mtto;
+                }
+            }
+            .refrigeracion{
+                grid-area: refrigeracion;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .img-mtto{
+                    @include img-mtto;
+                }
+            }
+            .plomeria-mtto{
+                grid-area: plomeria-mtto;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .img-mtto{
+                    @include img-mtto;
+                }
+            }
+            .vidreria{
+                grid-area: vidreria;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .img-mtto{
+                    @include img-mtto;
+                }
+            }
+            .herreria{
+                grid-area: herreria;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .img-mtto{
+                    @include img-mtto;
+                }
+            }
+            .pintura{
+                grid-area: pintura;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .img-mtto{
+                    @include img-mtto;
+                }
+            }
+        }
+    }
+
+    .obras{
+    grid-area: obras;
+    display: grid;
+    margin: 0px 15px 0px 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "intro-obras intro-obras intro-obras"
+    "rubros-obras rubros-obras rubros-obras";
+        .intro-obras{
+            grid-area: intro-obras;
+            display: grid;
+            margin: 0px 15px 0px 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            grid-template-rows: auto;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "sub-obras sub-obras sub-obras"
+            "texto-obras texto-obras texto-obras";
+            .sub-obras{
+                grid-area: sub-obras;
+                @include subtitulo2;
+                text-align: center;
+                margin: 15px;
+                padding: 5px;
+            }
+            .texto-obras{
+                grid-area: texto-obras;
+                @include texto;
+                text-align: justify;
+                margin: 25px;
+            }
+        }
+        .rubros-obras{
+            grid-area: rubros-obras;
+            display: grid;
+            margin: 0px 15px 0px 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            grid-template-rows: auto;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "albanileria durlock plomeria"
+            "chillers pavimentos redes-electricidad";
+            
+            .albanileria{
+                grid-area: albanileria;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .img-mtto{
+                    @include img-mtto;
+                }
+            }
+            .durlock{
+                grid-area: durlock;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .img-mtto{
+                    @include img-mtto;
+                }
+            }
+            .plomeria{
+                grid-area: plomeria;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .img-mtto{
+                    @include img-mtto;
+                }
+            }
+            .chillers{
+                grid-area: chillers;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .img-mtto{
+                    @include img-mtto;
+                }
+            }
+            .pavimentos{
+                grid-area: pavimentos;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .img-mtto{
+                    @include img-mtto;
+                }
+            }
+            .redes-electricidad{
+                grid-area: redes-electricidad;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                justify-content: center;
+                align-items: center;
+                .tipo-mantenimiento{
+                    @include subtitulo4;
+                    margin: 10px;
+                    text-align: center
+                }
+                .img-mtto{
+                    @include img-mtto;
+                }
+            }
+         
+           
+        }
+    }
+    .cobertura{
+        grid-area: cobertura;
+            display: grid;
+            margin: 0px 15px 0px 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            grid-template-rows: auto;
+            grid-auto-flow: row;
+            grid-template-areas:
+           "sub-cobertura sub-cobertura sub-cobertura"
+            "mapa mapa mapa";
+        .sub-cobertura{
+        grid-area: sub-cobertura;
+        @include subtitulo2;
+        margin: 15px;
+        padding: 10px;
+        text-align: center;
+
+        }
+        .mapa{
+            grid-area: mapa;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            img{
+                width: 400px;
+            }
+            
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1224px) {
+    .servicios {
+      grid-template-columns: 1fr 1fr; /* Cambiar a dos columnas en el contenedor principal */
+      grid-template-areas: "subtitulo subtitulo"
+      "mantenimiento mantenimiento"
+      "obras obras"
+      "cobertura cobertura";
+    }
+    .mantenimiento {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Dos columnas */
+      grid-template-areas:  "intro-mantenimiento intro-mantenimiento"
+      "descripcion-mantenimiento descripcion-mantenimiento"
+      "rubros-mantenimiento rubros-mantenimiento";
+      
+      .descripcion-mantenimiento {
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+        grid-template-areas:
+          "sub2-mantenimiento sub2-mantenimiento"
+          "servicio1 servicio2" 
+          "servicio3 servicio4" 
+          "servicio5 servicio6";
+      }
+      .rubros-mantenimiento {
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+        grid-template-areas:
+          "sub2-rubros sub2-rubros"
+          "electricidad refrigeracion"
+          "plomeria-mtto vidrieria"
+          "herreria pintura";
+      }
+    }
+    .obras {
+      grid-template-columns: 1fr 1fr; /* Dos columnas para obras */
+      grid-template-areas:
+        "intro-obras intro-obras"
+        "rubros-obras rubros-obras"; /* Ajustando áreas si es necesario */
+    }
+    .cobertura {
+      grid-template-columns: 1fr 1fr; /* Dos columnas para cobertura */
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .servicios {
+      grid-template-columns: 1fr; /* Cambiar a una columna en el contenedor principal */
+      grid-template-areas: "subtitulo"
+      "mantenimiento"
+      "obras"
+      "cobertura";
+    }
+    .mantenimiento {
+      .descripcion-mantenimiento {
+        display: grid;
+        grid-template-columns: 1fr; /* Una columna */
+        grid-template-areas:
+          "sub2-mantenimiento"
+          "servicio1" 
+          "servicio2"
+          "servicio3"
+          "servicio4"
+          "servicio5"
+          "servicio6";
+      }
+      .rubros-mantenimiento {
+        grid-template-columns: 1fr; /* Una columna */
+        grid-template-areas:
+          "sub2-rubros"
+          "electricidad"
+          "refrigeracion"
+          "plomeria-mtto"
+          "vidrieria"
+          "herreria"
+          "pintura";
+      }
+      .obras {
+        grid-template-columns: 1fr; /* Una columna para obras */
+        grid-template-areas:
+          "intro-obras"
+          "rubros-obras"; /* Mantener en una columna */
+      }
+      .cobertura {
+        grid-template-columns: 1fr; /* Una columna para cobertura */
+        grid-template-areas:
+          "sub-cobertura"
+          "mapa";
+      }
+    }
+  }
